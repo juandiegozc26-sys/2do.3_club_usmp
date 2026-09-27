@@ -1,0 +1,295 @@
+body {
+    font-family: Arial;
+background-color: #f2f2f2;
+margin: 0;
+padding-top: 65px; 
+}
+
+.navbar {
+background-color: #640505;
+padding: 10px 25px;
+}
+
+.logo-usmp {
+height: 57px;
+width: auto;
+border-radius: 6px;
+}
+
+.menu {
+text-align: center;
+background-color: white;
+padding: 15px;
+border-bottom: 1px dashed black;
+}
+
+.menu a {
+color: black;
+text-decoration: none;
+margin: 15px;
+}
+
+.menu a:hover {
+color: #a91d2f;
+}
+
+.titulo {
+font-size: 30px;
+text-align: center;
+color: white;
+padding-bottom: 10px;
+background-color: #3a0101;
+}
+
+.contenedor {
+display: flex;
+gap: 20px;
+justify-content: center;
+margin-bottom: 50px;
+margin-top: 20px;
+}
+
+.fila {
+display: flex;
+gap: 30px;
+padding: 20px 40px;
+}
+
+.fila .texto {
+width: 55%;
+}
+
+.fila .foto {
+width: 45%;
+}
+
+.fila.hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 40px;
+    color: white;
+    isolation: isolate;
+}
+
+.fila.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../imagenes/campus.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.45);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.fila.hero h1,
+.fila.hero p {
+    color: white;
+}
+
+.fila.hero button {
+    background-color: #a91d2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+
+.foto img {
+text-align: center;
+padding: 60px auto;
+border-radius: 5px;
+width: 500px;
+box-shadow: #222;
+}
+
+.producto-foto {
+background-color: #d9d9d9;
+color: #000000;
+text-align: center;
+padding: 40px 10px;
+border-radius: 10px 10px 0 0;
+}
+
+.producto {
+width: 300px;
+background-color: white;
+padding: 20px;
+text-align: center;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 2px 2px 8px #aaa;
+}
+
+.producto h2 {
+font-size: 20px;
+}
+
+.producto h3 {
+color: #a91d2f;
+}
+
+.producto p {
+color: #555;
+}
+
+.producto button {
+background-color: #a91d2f;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 25px;
+cursor: pointer;
+}
+
+.producto button:hover {
+background-color: #7a1522;
+}
+
+.producto img{
+width: 100%;
+border-radius: 10px;
+}
+.destacado {
+width: 500px;
+background-color: #a91d2f;
+color: white;
+margin: 30px auto;
+padding: 25px;
+text-align: center;
+border-radius: 10px;
+}
+
+.destacado button {
+background-color: white;
+color: #a91d2f;
+border: none;
+border-radius: 5px;
+padding: 10px 25px;
+cursor: pointer;
+}
+
+.destacado button:hover {
+background-color: #b91515;
+}
+
+footer {
+background-color: #222;
+color: white;
+text-align: center;
+padding: 10px;
+margin-top: 30px;
+}
+.nav-item a{
+color: black;
+}
+
+.nav-item a:hover{
+color: #e90c0c;
+}
+
+.portada-clubes {
+    min-height: 280px;
+    align-items: center;
+}
+
+.ruta-navegacion {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.ruta-navegacion a {
+    color: white;
+}
+
+.boton-contorno {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.encabezado-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ver-todo {
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.producto-ancho {
+    width: 380px;
+}
+
+.producto-horizontal {
+    width: 320px;
+    display: flex;
+    gap: 12px;
+    text-align: left;
+    align-items: center;
+}
+
+.producto-horizontal h2 {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
+.contenedor-grid {
+    flex-wrap: wrap;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.etiqueta-roja { background-color: #a91d2f; color: white; }
+.etiqueta-contorno { background: transparent; border: 1px solid; }
+.etiqueta-contorno.etiqueta-naranja { color: #d97706; border-color: #d97706; }
+.etiqueta-contorno.etiqueta-azul    { color: #2563eb; border-color: #2563eb; }
+.etiqueta-contorno.etiqueta-verde   { color: #16a34a; border-color: #16a34a; }
+.etiqueta-contorno.etiqueta-roja    { color: #a91d2f; border-color: #a91d2f; }
+
+.destacado-lista {
+    width: 380px;
+    text-align: left;
+}
+
+.destacado-lista a {
+    color: white;
+    text-decoration: underline;
+}
+
+.contenedor-footer {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contenedor-footer h2 {
+    font-size: 15px;
+}
+
+.contenedor-footer a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.contenedor-footer a:hover {
+    color: white;
+}
